@@ -1,0 +1,31 @@
+.container {
+    max-width: 600px;
+    border: darkturquoise 1px solid;
+    margin-top: 70px;
+    border-radius: 6px;
+  }
+  #city_name {
+    color: #8caede;
+    margin-top: 10px;
+  }
+  li {
+    list-style: none;
+    color: #8fc6ef;
+  }
+  .temperature {
+    font-size: 50px;
+    color: #8caede;
+  }
+  .units {
+    position: relative;
+    top: -30px;
+    color: #8caede;
+  }
+  #des {
+    margin-top: 40px;
+  }
+  #colaval,
+  #coldovom {
+    margin-top: 18px;
+  }
+  
