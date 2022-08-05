@@ -28,4 +28,13 @@
   #coldovom {
     margin-top: 19px;
   }
+  .source{
+    text-decoration: none;
+    color:#8caede;
+  }
+  .sources{
+    display: block;
+    margin: 0 auto;
+    margin-left: 480px;
+  }
   
