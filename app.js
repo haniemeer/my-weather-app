@@ -48,7 +48,7 @@ function displayForecast(response) {
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
-          width="42"
+          width="45"
         />
         <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-max"> ${Math.round(
@@ -113,8 +113,32 @@ search(cityInputElement.value);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-// let farenhlink=document.querySelector("#farenheit-link")
-// farenhlink.addEventListener("click",fareheit)
-// let celciousLink=document.querySelector("#celcious-link")
-// celciousLink.addEventListener("click",celcious)
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
+;
+
+let fahrenheitLink = document.querySelector("#farenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celcius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 search("Tehran");
+displayForecast();

@@ -14,13 +14,15 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="style.css" rel="stylesheet" />
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    </head>
 
 
 
 
 
     <div class="container shadow">
+      <img class="icon" src="icon1.png" width="65px">
       <form id="search-form" class="mb-3 mt-4">
         <div class="row">
           <div class="col-6" id="colaval">
@@ -40,6 +42,7 @@
                 type="submit"
                 value="Search the city"
                 class="btn btn-outline-primary w-100"
+                id="submit"
               />
             </div>
           </div>
@@ -58,7 +61,7 @@
                     <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="sunny" id="icon" class="float-left" />
                     
                       <strong id="temperature"></strong
-                      ><span class="units"><a href="#" id="celcious-link">°C</a>  | <a href="#" id="farenheit-link">°F</a></span>
+                      ><span class="units"><a href="#" id="celcius-link">°C</a>  | <a href="#" id="farenheit-link">°F</a></span>
                   </div>
                 </div>
             

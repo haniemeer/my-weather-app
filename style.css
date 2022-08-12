@@ -1,17 +1,27 @@
+ body{
+  background-color: #d9edf0;
+   
+}
 .container {
+  background: linear-gradient(#94ede7, #9198e5); 
+
     max-width: 700px;
-    border: darkturquoise 1px solid;
+    border: rgb(227, 237, 237) 1px solid;
     margin-top: 70px;
     border-radius: 6px;
+    box-sizing: border-box;
   }
   #cityName {
-    color: #8caede;
+    color: #0c428e;
     margin-top: 10px;
     margin-left: 2px;
+    font-family: 'DynaPuff', cursive;
+
   }
   ul {
     margin: 2px;
     padding: 0;
+
   }
   
   li {
@@ -19,28 +29,37 @@
     margin: 0;
     padding: 0;
     margin-left: 4px;
-    color: #8fc6ef;
+    color: #0c428e;
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
+    font-family: 'DynaPuff', cursive;
+
   }
   
   .temperature {
     font-size: 50px;
-    color: #8caede;
+    color: #0c428e;
+    font-family: 'DynaPuff', cursive;
+
   }
   .units {
     
     top: -30px;
-    color: #8caede;
+    color: #0c428e;
+    font-family: 'DynaPuff', cursive;
+
   }
   #colaval,
   #coldovom {
-    margin-top: 19px;
+    margin-top: 5px;
+
   }
   .source{
     text-decoration: none;
-    color:#8caede;
+    color: #0c428e;
+    font-family: 'DynaPuff', cursive;
+
   }
   .sources{
     display: block;
@@ -52,15 +71,17 @@
   }
   #farenheit-link{
     text-decoration: none;
-    color: #878787;
+    color: #0c428e;
 }
-#celcious-link{
+#celcius-link{
     text-decoration: none;
-    color: #878787;
+    color: #0c428e;
 }
 strong{
   font-size: 36px;
-  color: #8caede;
+  color: #0c428e;
+  font-family: 'DynaPuff', cursive;
+
 }
 .weather-temperature .units {
   position: relative;
@@ -77,8 +98,10 @@ strong{
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
-  margin-bottom: 10px;
+  color: #0c428e;
+  margin-bottom: 20px;
+  font-family: 'DynaPuff', cursive;
+
 }
 
 .weather-forecast-date {
@@ -92,4 +115,17 @@ strong{
 
 .weather-forecast-temperatures {
   font-size: 13px;
+  font-family: 'DynaPuff', cursive;
+
+}
+.icon{
+  margin-top: 10px;
+}
+#city-input{
+  color: #0c428e;
+  background-color: #d9edf0;
+}
+#submit{
+  font-family: 'DynaPuff', cursive;
+
 }
